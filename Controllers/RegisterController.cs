@@ -8,5 +8,15 @@ namespace EvaluationSystem.Controllers
         {
             return View();
         }
+
+        public IActionResult RegisterStudent()
+        {
+            return View();
+        }
+
+        public IActionResult RegisterProfessor()
+        {
+            return View();
+        }
     }
 }
