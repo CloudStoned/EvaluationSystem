@@ -1,45 +1,43 @@
 ﻿@model StudentTableModel
 
-<form method = "post">
-    <div class = "Boarder">
-        <div class ="Title">
-            <h1>Register Student</h1>
+
+<div class = "Boarder">
+    <div class ="Title">
+        <h1>Register Student</h1>
+    </div>
+
+        <div class = "Labels">
+            <label> Student Number </label>
+            <input asp-for="studentNumber" type = "text" />
         </div>
 
-            <div class = "Labels">
-                <label> Student Number </label>
-                <input asp-for="studentNumber" type = "text" />
-            </div>
+        <div class = "Labels">
+            <label> First Name </label>
+            <input asp-for="studentFirstName" type = "text" />
+        </div>
 
-            <div class = "Labels">
-                <label> First Name </label>
-                <input asp-for="studentFirstName" type = "text" />
-            </div>
+        <div class = "Labels">
+            <label> Last Name </label>
+            <input asp-for="studentLastName" type = "text" />
+        </div>
 
-            <div class = "Labels">
-                <label> Last Name </label>
-                <input asp-for="studentLastName" type = "text" />
-            </div>
+        <div class = "Labels">
+            <label> Course </label>
+            <input asp-for="studentCourse" type = "text" />
+        </div>
 
-            <div class = "Labels">
-                <label> Course </label>
-                <input asp-for="studentCourse" type = "text" />
-            </div>
+        <div class = "Labels">
+            <label> Year Level </label>
+            <input asp-for="studentYearLevel" type = "text" />
+        </div>
 
-            <div class = "Labels">
-                <label> Year Level </label>
-                <input asp-for="studentYearLevel" type = "text" />
-            </div>
+        <div class = "Labels">
+            <label> Date Today </label>
+            <input asp-for="dateCreated" type = "text" />
+        </div>
 
-            <div class = "Labels">
-                <label> Date Today </label>
-                <input asp-for="dateCreated" type = "date" />
-            </div>
-
-            <div class = "CreateButton">
-                <button type = "submit" class = " btn btn-primary " style = "width:120px"> Create Account </button>
-                <a asp-controller= "Register" asp-action="RegisterIndex" class = "btn btn-secondary" style = "width:120px">  Back </a>
-            </div>
-    </div>
-</form>
-
+        <div class = "CreateButton">
+            <button type = "submit" class = " btn btn-primary " style = "width:120px"> Create Account </button>
+            <a asp-controller= "Register" asp-action="RegisterIndex" class = "btn btn-secondary" style = "width:120px">  Back </a>
+        </div>
+</div>
