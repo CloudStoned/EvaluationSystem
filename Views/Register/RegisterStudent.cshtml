@@ -1,6 +1,6 @@
 ﻿@model StudentTableModel
 
-
+<form method = "post">
 <div class = "Boarder">
     <div class ="Title">
         <h1>Register Student</h1>
@@ -33,7 +33,7 @@
 
         <div class = "Labels">
             <label> Date Today </label>
-            <input asp-for="dateCreated" type = "text" />
+            <input asp-for="dateCreated" type = "date" />
         </div>
 
         <div class = "CreateButton">
@@ -41,3 +41,5 @@
             <a asp-controller= "Register" asp-action="RegisterIndex" class = "btn btn-secondary" style = "width:120px">  Back </a>
         </div>
 </div>
+</form>
+

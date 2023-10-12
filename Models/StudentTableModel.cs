@@ -5,6 +5,8 @@ namespace EvaluationSystem.Models
     public class StudentTableModel
     {
         [Key]
+        public int Id { get; set; }
+        [Required]
         public int studentNumber { get; set; }
         [Required]
         public string studentFirstName { get; set; }
