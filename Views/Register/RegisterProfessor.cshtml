@@ -1,7 +1,34 @@
-﻿
-@{
-    ViewData["Title"] = "RegisterProfessor";
-}
+﻿@model ProfessorTableModel
 
-<h1>RegisterProfessor</h1>
+<div class = "Boarder">
+        <div class ="Title">
+            <h1>Register Professor</h1>
+        </div>
+
+        <div class = "Labels">
+            <label> Prof. ID </label>
+            <input asp-for="professorId" type = "text" />
+        </div>
+
+        <div class = "Labels">
+            <label> First name </label>
+            <input asp-for="professorFirstName" type = "text" />
+        </div>
+
+        <div class = "Labels">
+            <label> Last Name </label>
+            <input asp-for="professorLastName" type = "text" />
+        </div>
+
+        <div class = "Labels">
+            <label> Date Today </label>
+            <input asp-for="dateCreated" type = "text" />
+        </div>
+
+        <div class = "CreateButton">
+            <button type = "submit" class = " btn btn-primary " style = "width:120px"> Create Account </button>
+            <a asp-controller= "Register" asp-action="RegisterIndex" class = "btn btn-secondary" style = "width:120px">  Back </a>
+        </div>
+</div>
+
 

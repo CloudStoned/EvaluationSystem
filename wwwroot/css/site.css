@@ -16,3 +16,35 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* FOR REGISTER */
+.TitleIndex{
+    margin-top:170px;
+
+}
+
+.Boarder{
+    margin-top:25px;
+    border: 3px solid #000000;
+}
+
+.ButtonLinks {
+    text-align: center;
+}
+
+.Boarder {
+    text-align: center;
+}
+
+.Labels {
+    padding-top: 25px;
+}
+
+.Title{
+    padding-top:25px;
+    text-align:center;
+}
+
+.CreateButton{
+    padding-top:25px;
+}
