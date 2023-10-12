@@ -3,10 +3,12 @@ C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.Gener
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.AssemblyInfoInputs.cache
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.AssemblyInfo.cs
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.csproj.CoreCompileInputs.cache
-C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.RazorAssemblyInfo.cache
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.RazorAssemblyInfo.cs
+C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.dll
+C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\refint\EvaluationSystem.dll
+C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.pdb
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\appsettings.json
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\EvaluationSystem.staticwebassets.runtime.json
@@ -523,6 +525,7 @@ C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\runtimes\win\lib\net6.
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\staticwebassets\msbuild.EvaluationSystem.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\staticwebassets\msbuild.build.EvaluationSystem.props
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.EvaluationSystem.props
@@ -534,8 +537,5 @@ C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\scopedcss\Views\Shared
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\scopedcss\bundle\EvaluationSystem.styles.css
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\scopedcss\projectbundle\EvaluationSystem.bundle.scp.css
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.csproj.CopyComplete
-C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.dll
-C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\refint\EvaluationSystem.dll
-C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.pdb
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.genruntimeconfig.cache
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\ref\EvaluationSystem.dll
