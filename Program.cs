@@ -1,9 +1,11 @@
+using EvaluationSystem.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-<<<<<<< HEAD
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
@@ -11,8 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-=======
->>>>>>> parent of 6d9bc05 (Added Database)
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
