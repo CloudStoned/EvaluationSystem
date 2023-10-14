@@ -1,4 +1,5 @@
-﻿using EvaluationSystem.Models;
+﻿using EvaluationSystem.Data;
+using EvaluationSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,21 +7,19 @@ namespace EvaluationSystem.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AppDbContext dataDb;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(AppDbContext data,ILogger<HomeController> logger)
         {
+             dataDb = data;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
+            IEnumerable<ProfessorTableModel> professors = dataDb.Professors;
+            return View(professors);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

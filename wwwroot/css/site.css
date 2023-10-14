@@ -17,10 +17,40 @@ body {
   margin-bottom: 60px;
 }
 
-/* FOR REGISTER */
-.TitleIndex{
-    margin-top:170px;
+/* Home */
+.ProfessorItem {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 20px; 
+}
 
+.ProfessorName {
+    border-bottom:5px solid #ccc; 
+    padding-bottom: 10px; 
+}
+
+.EvaluateButton {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR REGISTER */
+.TitleIndex {
+    margin-top: 170px;
 }
 
 .Boarder{
