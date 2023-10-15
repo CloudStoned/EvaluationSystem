@@ -28,13 +28,16 @@ namespace EvaluationSystem.Controllers
         }
 
         [HttpPost]
-        public IActionResult Evaluate(StudentAnswersTable answers,int professorId)
+        public IActionResult Evaluate(int professorId, StudentAnswersTable answers)
         {
-                dataDb.Answers.Add(answers);
-                dataDb.SaveChanges();
-                return RedirectToAction("Index");
-        }
+            // Set the professorFK based on the professorId
+            answers.professorFK = professorId;
 
+            // Save the data to the database
+            dataDb.Answers.Add(answers);
+            dataDb.SaveChanges();
+            return RedirectToAction("Index");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
