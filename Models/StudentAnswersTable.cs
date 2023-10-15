@@ -1,5 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EvaluationSystem.Models
 {
@@ -8,28 +8,25 @@ namespace EvaluationSystem.Models
         [Key]
         public int answerId { get; set; }
 
-        public int studentNumber { get; set; }
-        public string? lastName { get; set; }
-        public string? course { get; set; }
-        public int yearLevel { get; set; }
-
         [Required]
-        public string? answerOne { get; set; }
+        public string? stronglyAgree { get; set; }
         [Required]
-        public string? answerTwo { get; set; }
+        public string? agree { get; set; }
         [Required]
-        public string? answerThree { get; set; }
+        public string? neutral { get; set; }
         [Required]
-        public string? answerFour { get; set; }
+        public string? disagree { get; set; }
         [Required]
-        public string? answerFive { get; set; }
-
-        public int professorId { get; set; }
+        public string? stronglyDisagree { get; set; }
 
         [ForeignKey("studentNumber")]
-        public StudentTableModel? Student { get; set; }
+        public int studentFK { get; set; }
+
         [ForeignKey("professorId")]
-        public ProfessorTableModel? Professor { get; set; }
-        public DateTime dateEvaluated { get; set; }
+        public int professorFK { get; set; }
+
+        public StudentTableModel? studentNumber { get; set; }
+
+        public ProfessorTableModel? professorId { get; set; }
     }
 }

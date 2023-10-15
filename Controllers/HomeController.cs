@@ -24,44 +24,16 @@ namespace EvaluationSystem.Controllers
 
         public IActionResult Evaluate(int professorId)
         {
-            // Use the professorId to fetch the professor's information from your database
-            ProfessorTableModel professor = dataDb.Professors.FirstOrDefault(p => p.professorId == professorId);
-
-            if (professor == null)
-            {
-                // Handle the case where the professor does not exist
-                // You can choose to return a 404 not found view or a custom error view
-                return NotFound();
-            }
-
-            // Pass the professor's information to the view
             return View();
         }
 
         [HttpPost]
-        public IActionResult Evaluate(StudentAnswersTable answers, int professorId, int studentNumber)
+        public IActionResult Evaluate(StudentAnswersTable answers,int professorId)
         {
-
-            bool studentExists = dataDb.Students.Any(s => s.studentNumber == studentNumber);
-            if (studentExists)
-            {
-                answers.professorId = professorId; // Add professor ID to the answers object
                 dataDb.Answers.Add(answers);
                 dataDb.SaveChanges();
                 return RedirectToAction("Index");
-            }
-            else
-            {
-                // Student does not exist, redirect or show an error message
-                return RedirectToAction("Index");
-            }
-
         }
-
-
-
-
-
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

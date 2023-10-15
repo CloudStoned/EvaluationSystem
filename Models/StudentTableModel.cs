@@ -14,6 +14,5 @@ namespace EvaluationSystem.Models
         public string? studentCourse { get; set; }
         [Required]
         public int studentYearLevel { get; set; }
-        public DateTime dateCreated { get; set; } = DateTime.Now;
     }
 }

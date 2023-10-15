@@ -10,6 +10,5 @@ namespace EvaluationSystem.Models
         public string? professorFirstName { get; set; }
         [Required]
         public string? professorLastName { get; set; }
-        public DateTime dateCreated { get; set; } = DateTime.Now;
     }
 }
