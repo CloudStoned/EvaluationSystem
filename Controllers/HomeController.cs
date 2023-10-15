@@ -37,13 +37,16 @@ namespace EvaluationSystem.Controllers
                 TempData["error"] = "You are not registered as a Student. Please register first.";
                 return RedirectToAction("Evaluate");
             }
+            else
+            {
+                answers.professorFK = professorId;
+                dataDb.Answers.Add(answers);
+                dataDb.SaveChanges();
 
-            answers.professorFK = professorId;
-            dataDb.Answers.Add(answers);
-            dataDb.SaveChanges();
+                TempData["success"] = "Evaluation submitted successfully.";
+                return RedirectToAction("Index");
+            }
 
-            TempData["success"] = "Evaluation submitted successfully.";
-            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

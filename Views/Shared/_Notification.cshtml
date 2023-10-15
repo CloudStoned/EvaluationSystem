@@ -1,18 +1,18 @@
-﻿@if (TempData["error"] != null)
+﻿@{
+    var successMessage = TempData["success"] as string;
+    var errorMessage = TempData["error"] as string;
+}
+
+@if (!string.IsNullOrEmpty(successMessage))
 {
-   <script src ="~/lib/jquery/dist/jquery.min.js"></script>
-   <script src = "//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-   <script type = "text/javascript">
-           toastr.error('@TempData["error"]', 'Error');
+    <script type="text/javascript">
+        toastr.success('@successMessage');
     </script>
 }
 
-@if (TempData["success"] != null)
+@if (!string.IsNullOrEmpty(errorMessage))
 {
-       <script src ="~/lib/jquery/dist/jquery.min.js"></script>
-       <script src = "//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-       <script type = "text/javascript">
-                   toastr.success('@TempData["success"]');
-        </script>
+    <script type="text/javascript">
+        toastr.error('@errorMessage', 'Error');
+    </script>
 }
-
