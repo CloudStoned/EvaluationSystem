@@ -9,27 +9,27 @@ namespace EvaluationSystem.Models
         public int answerId { get; set; }
 
         public int studentNumber { get; set; }
-        public string lastName { get; set; }
-        public string course { get; set; }
+        public string? lastName { get; set; }
+        public string? course { get; set; }
         public int yearLevel { get; set; }
 
         [Required]
-        public string answerOne { get; set; }
+        public string? answerOne { get; set; }
         [Required]
-        public string answerTwo { get; set; }
+        public string? answerTwo { get; set; }
         [Required]
-        public string answerThree { get; set; }
+        public string? answerThree { get; set; }
         [Required]
-        public string answerFour { get; set; }
+        public string? answerFour { get; set; }
         [Required]
-        public string answerFive { get; set; }
+        public string? answerFive { get; set; }
 
         public int professorId { get; set; }
 
         [ForeignKey("studentNumber")]
-        public StudentTableModel Student { get; set; }
+        public StudentTableModel? Student { get; set; }
         [ForeignKey("professorId")]
-        public ProfessorTableModel Professor { get; set; }
+        public ProfessorTableModel? Professor { get; set; }
         public DateTime dateEvaluated { get; set; }
     }
 }

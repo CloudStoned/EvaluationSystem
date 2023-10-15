@@ -14,7 +14,9 @@
                     <h2>@data.professorFirstName @data.professorLastName</h2>
                 </div>
                 <div class="EvaluateButton">
-                    <button class="btn btn-primary">Evaluate</button>
+                    <a asp-controller="Home" asp-action="Evaluate"  asp-route-professorId = "@data.professorId" class ="btn btn-primary">
+                        Evaluate
+                    </a>
                 </div>
             </div>
     }

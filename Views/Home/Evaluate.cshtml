@@ -1,0 +1,61 @@
+﻿@model StudentAnswersTable
+
+@{
+    ViewData["Title"] = "Evaluate";
+}
+
+<form method = "post">
+        <div class = "Boarder">
+            <div class ="Title">
+                <h1> Evaluate </h1>
+            </div>
+
+            <div class = "Labels">
+                <label> Student Number </label>
+                <br />
+                <input class = "questions" asp-for="answerOne" type = "text" />
+                <hr />
+            </div>
+
+            <div class = "Labels">
+                <label> 1. The teacher effectively communicated complex concepts and ideas to students.</label>
+                <br />
+                <input class = "questions" asp-for="answerOne" type = "text" />
+                <hr />
+            </div>
+
+            <div class = "Labels">
+                <label> 2. The teacher created a supportive and inclusive classroom environment for all students. </label>
+                <br />
+                <input class = "questions"  asp-for="answerTwo" type = "text" />
+                <hr />
+            </div>
+
+            <div class = "Labels">
+                <label> 3. The teacher adapted their teaching methods to meet the diverse learning needs of their students.  </label>
+                <br />
+                <input class = "questions"  asp-for="answerThree" type = "text" />
+                 <hr />
+            </div>
+
+            <div class = "Labels">
+                <label> 4. The teacher was responsive to student questions, concerns, and feedback. </label>
+                <br />
+                <input class = "questions"  asp-for="answerFour" type = "text" />
+                 <hr />
+            </div>
+
+            <div class = "Labels">
+                <label> 5. The teacher was organized and prepared in delivering their lessons and managing classroom activities. </label>
+                <br />
+                <input class = "questions"  asp-for="answerFive" type = "text" />
+            </div>
+
+            <div class="EndButton">
+                 <a asp-controller="Home" asp-action="Evaluate" class ="btn btn-primary"> Submit </a>
+            </div>
+            <a asp-controller="Home" asp-action="Index" class ="btn btn-primary"> Back </a>
+
+
+       </div>
+</form>

@@ -36,14 +36,16 @@ body {
 }
 
 
+.questions{
+    margin-top:12px;
+}
 
-
-
-
-
-
-
-
+.EndButton {
+    display: inline-block;
+    padding-inline: 12px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
 
 
 

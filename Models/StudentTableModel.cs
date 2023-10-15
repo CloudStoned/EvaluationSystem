@@ -5,15 +5,13 @@ namespace EvaluationSystem.Models
     public class StudentTableModel
     {
         [Key]
-        public int Id { get; set; }
-        [Required]
         public int studentNumber { get; set; }
         [Required]
-        public string studentFirstName { get; set; }
+        public string? studentFirstName { get; set; }
         [Required]
-        public string studentLastName { get; set; }
+        public string? studentLastName { get; set; }
         [Required]
-        public string studentCourse { get; set; }
+        public string? studentCourse { get; set; }
         [Required]
         public int studentYearLevel { get; set; }
         public DateTime dateCreated { get; set; } = DateTime.Now;
