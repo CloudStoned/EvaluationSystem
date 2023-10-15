@@ -16,7 +16,7 @@ namespace EvaluationSystem.Models
         public string? neutral { get; set; }
         [Required]
         public string? disagree { get; set; }
-        [Required]
+        [Required]  
         public string? stronglyDisagree { get; set; }
 
         [ForeignKey("studentNumber")]
