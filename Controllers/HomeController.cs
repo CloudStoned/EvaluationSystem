@@ -26,16 +26,22 @@ namespace EvaluationSystem.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult Evaluate(int professorId, StudentAnswersTable answers)
         {
-            // Set the professorFK based on the professorId
-            answers.professorFK = professorId;
+            bool studentExists = dataDb.Students.Any(s => s.studentNumber == answers.studentFK);
 
-            // Save the data to the database
+            if (!studentExists)
+            {
+                TempData["error"] = "You are not registered as a Student. Please register first.";
+                return RedirectToAction("Evaluate");
+            }
+
+            answers.professorFK = professorId;
             dataDb.Answers.Add(answers);
             dataDb.SaveChanges();
+
+            TempData["success"] = "Evaluation submitted successfully.";
             return RedirectToAction("Index");
         }
 

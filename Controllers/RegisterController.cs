@@ -32,6 +32,7 @@ namespace EvaluationSystem.Controllers
         {
             dataDb.Students.Add(students);
             dataDb.SaveChanges();
+            TempData["success"] = "Registered Successfully";
             return RedirectToAction("RegisterIndex");
         }
 
@@ -40,6 +41,7 @@ namespace EvaluationSystem.Controllers
         {
             dataDb.Professors.Add(professor);
             dataDb.SaveChanges();
+            TempData["success"] = "Registered Successfully";
             return RedirectToAction("RegisterIndex");
         }
     }
