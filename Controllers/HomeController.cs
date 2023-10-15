@@ -26,6 +26,7 @@ namespace EvaluationSystem.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Evaluate(int professorId, StudentAnswersTable answers)
         {
