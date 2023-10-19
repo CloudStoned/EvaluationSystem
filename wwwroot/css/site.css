@@ -33,12 +33,31 @@ body {
 
 .EvaluateButton {
     padding-top: 10px;
+    padding-bottom:10px;
 }
 
+.progress{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:5px;
+    width:140px;
+}
 
+ul{
+    list-style-type:none;
+}
+
+.card-text{
+    padding-top:5px;
+}
+
+.ul stats{
+    text-align:center;
+}
 .questions{
     margin-top:12px;
 }
+
 
 .EndButton {
     display: inline-block;
@@ -74,6 +93,7 @@ body {
 
 .Title{
     padding-top:25px;
+    padding-bottom:25px;
     text-align:center;
 }
 

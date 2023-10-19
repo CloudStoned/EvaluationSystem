@@ -16,7 +16,6 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-
 var app = builder.Build();
 
 startup.Configure(app, builder.Environment);

@@ -1,22 +1,59 @@
-﻿@model IEnumerable<ProfessorTableModel> 
-
+﻿@model IEnumerable<ProfessorTableModel>
 
 <div class="Title">
-    <h1 class="display-4"> Evaluate Test </h1>
- </div>
+    <h1 class="display-4">Evaluate </h1>
+</div>
 
 <div class="Layout">
-    @foreach (var data in Model)
+    @for (var i = 0; i < Model.Count(); i++)
     {
-            <div class="ProfessorItem">
-                <div class="ProfessorName">
-                    <h2>@data.professorFirstName @data.professorLastName</h2>
+        if (i % 3 == 0)
+        {
+            @:<div class="row">
+        }
+
+                 <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Professor</div>
+                            <div class="card-body">
+                                <h4 class="card-title">@Model.ElementAt(i).professorFirstName @Model.ElementAt(i).professorLastName</h4>
+                                    <ul class="card-text">
+                                        <li class = "stats">Clarity</li>
+                                            <div class="progress">
+                                                 <div class="progress-bar bg-primary" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        <li>Inclusivity</li>
+                                            <div class="progress">
+                                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        <li>Adaptability</li>
+                                            <div class="progress">
+                                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        <li>Responsiveness</li>
+                                            <div class="progress">
+                                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        <li>Organization</li>
+                                            <div class="progress">
+                                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                    </ul>
+                            </div>
+                        <div class = "pt -3 text-center">
+                            <div class="EvaluateButton">
+                                <a asp-controller="Home" asp-action="Evaluate" asp-route-professorId="@Model.ElementAt(i).professorId" class="btn btn-light">
+                                    Evaluate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="EvaluateButton">
-                    <a asp-controller="Home" asp-action="Evaluate"  asp-route-professorId = "@data.professorId" class ="btn btn-primary">
-                        Evaluate
-                    </a>
-                </div>
-            </div>
+         
+
+        if (i % 3 == 2 || i == Model.Count() - 1)
+        {
+            @:</div>
+        }
     }
 </div>
