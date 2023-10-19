@@ -9,15 +9,15 @@ namespace EvaluationSystem.Models
         public int answerId { get; set; }
 
         [Required]
-        public string? stronglyAgree { get; set; }
+        public string? answerOne { get; set; }
         [Required]
-        public string? agree { get; set; }
+        public string? answerTwo { get; set; }
         [Required]
-        public string? neutral { get; set; }
+        public string? answerThree { get; set; }
         [Required]
-        public string? disagree { get; set; }
+        public string? answerFour { get; set; }
         [Required]  
-        public string? stronglyDisagree { get; set; }
+        public string? answerFive { get; set; }
 
         [ForeignKey("studentNumber")]
         public int studentFK { get; set; }

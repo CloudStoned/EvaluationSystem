@@ -1,64 +1,30 @@
 ﻿@model StudentAnswersTable
 
-@{
-    ViewData["Title"] = "Evaluate";
-}
+<form method="post">
 
+        <div class="TitleEval">
+            <h2>Evaluation Form</h2>
+        </div>
 
+        <div class="form-group StudentNumber">
+            <label class="col-form-label col-form-label-lg mt-4">Student Number:</label>
+            <input class="form-control form-control-lg custom-input" type="text" asp-for="studentFK" placeholder="2021XXXXXX">
+        </div>
 
-<form method = "post">
-        <div class = "Boarder">
-            <div class ="Title">
-                <h1> Evaluate </h1>
-            </div>
+        <label class = "questions"> 1. The teacher effectively communicated complex concepts and ideas to students. </label>
+        <partial name = "_Evaluate" />
 
-            <div class = "Labels">
-                <label> Student Number </label>
-                <br />
-                <input class = "questions" asp-for="studentFK" type = "text" />
-                <hr />
-            </div>
+        <label class = "questions"> 2. The teacher created a supportive and inclusive classroom environment for all students. </label>
+        <partial name = "_Evaluate" />
 
-            <div class = "Labels">
-                <label> 1. The teacher effectively communicated complex concepts and ideas to students.</label>
-                <br />
-                <input class = "questions" asp-for="stronglyAgree" type = "text" />
-                <hr />
-            </div>
+        <label class = "questions"> 3. The teacher adapted their teaching methods to meet the diverse learning needs of their students.</label>
+        <partial name = "_Evaluate" />
 
-            <div class = "Labels">
-                <label> 2. The teacher created a supportive and inclusive classroom environment for all students. </label>
-                <br />
-                <input class = "questions"  asp-for="agree" type = "text" />
-                <hr />
-            </div>
+        <label class = "questions"> 4. The teacher was responsive to student questions, concerns, and feedback. </label>
+        <partial name = "_Evaluate" />
 
-            <div class = "Labels">
-                <label> 3. The teacher adapted their teaching methods to meet the diverse learning needs of their students.  </label>
-                <br />
-                <input class = "questions"  asp-for="neutral" type = "text" />
-                 <hr />
-            </div>
+        <label class = "questions"> 5. The teacher was organized and prepared in delivering their lessons and managing classroom activities. </label>
+        <partial name = "_Evaluate" />
 
-            <div class = "Labels">
-                <label> 4. The teacher was responsive to student questions, concerns, and feedback. </label>
-                <br />
-                <input class = "questions"  asp-for="disagree" type = "text" />
-                 <hr />
-            </div>
-
-            <div class = "Labels">
-                <label> 5. The teacher was organized and prepared in delivering their lessons and managing classroom activities. </label>
-                <br />
-                <input class = "questions"  asp-for="stronglyDisagree" type = "text" />
-                 <hr />
-            </div>
-
-
-            <div class="EndButton">
-                 <button type = "submit" class = " btn btn-primary " style = "width:120px"> Submit </button>
-            </div>
-                <a asp-controller="Home" asp-action="Index" class ="btn btn-primary"> Back </a>
-       </div>
 </form>
 

@@ -76,6 +76,59 @@ ul{
 }
 
 /* EVALUATION */
+.TitleEval {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.form-group.StudentNumber {
+    text-align: center;
+}
+
+.form-group.StudentNumber label {
+    display: block;
+    padding-right:150px;
+    margin-bottom: 5px; 
+}
+
+.form-group.StudentNumber input {
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+.EvaluateContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the radio buttons and labels to be in a row */
+.form-check-inline {
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.form-check-inline input {
+  margin-right: 5px;
+  padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

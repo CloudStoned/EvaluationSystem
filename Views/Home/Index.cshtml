@@ -4,9 +4,6 @@
     <h1 class="display-4">Evaluate </h1>
 </div>
 
-
-
-
 <div class="HomeContainer">
     @for (var i = 0; i < Model.Count(); i++)
     {
@@ -38,15 +35,15 @@
                                     </div>
                             </ul>
                     </div>
-                            <div class = "pt -3 text-center">
-                                <div class="EvaluateButton">
-                                    <a asp-controller="Home" asp-action="Evaluate" asp-route-professorId="@Model.ElementAt(i).professorId" class="btn btn-light">
-                                        Evaluate
-                                    </a>
-                                </div>
+                        <div class = "pt -3 text-center">
+                            <div class="EvaluateButton">
+                                <a asp-controller="Home" asp-action="Evaluate" asp-route-professorId="@Model.ElementAt(i).professorId" class="btn btn-light">
+                                    Evaluate
+                                </a>
                             </div>
-            </div>
-        </div>
+                        </div>
+         </div>
+    </div>
    }
 </div>
 
