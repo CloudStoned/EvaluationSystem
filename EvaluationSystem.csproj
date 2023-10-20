@@ -17,4 +17,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="EvaluationDLL">
+      <HintPath>..\DLLFILES\EvaluationDLL\bin\Debug\net6.0\EvaluationDLL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

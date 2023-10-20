@@ -539,3 +539,5 @@ C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\scopedcss\projectbundl
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.csproj.CopyComplete
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\EvaluationSystem.genruntimeconfig.cache
 C:\Users\cloud\PROJECTS\EvaluationSystem\obj\Debug\net6.0\ref\EvaluationSystem.dll
+C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\EvaluationDLL.dll
+C:\Users\cloud\PROJECTS\EvaluationSystem\bin\Debug\net6.0\EvaluationDLL.pdb

@@ -9,6 +9,7 @@ namespace EvaluationSystem.Data
         { 
         }
         public DbSet<StudentTableModel> Students { get; set; }
+
         public DbSet<ProfessorTableModel> Professors { get; set; }  
         public DbSet<StudentAnswersTable> Answers { get; set; }
     }

@@ -1,4 +1,5 @@
-﻿using EvaluationSystem.Data;
+﻿using EvaluationDLL;
+using EvaluationSystem.Data;
 using EvaluationSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -37,6 +38,7 @@ namespace EvaluationSystem.Controllers
                 TempData["error"] = "You are not registered as a Student. Please register first.";
                 return RedirectToAction("Evaluate");
             }
+
             else
             {
                 answers.professorFK = professorId;

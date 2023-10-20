@@ -100,7 +100,6 @@ ul{
     justify-content: center;
 }
 
-/* Style the radio buttons and labels to be in a row */
 .form-check-inline {
     display: flex;
     align-items: center;
@@ -108,9 +107,21 @@ ul{
     margin-right:20px;
 }
 
-.form-check-inline input {
-  margin-right: 5px;
-  padding:10px;
+input[type=radio] {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+.QuestionsContainer {
+    margin-top:34px;
+    text-align: center
+}
+.EndButton{
+    width:120px;
+}
+
+.endButtond{
+    width:120px;
 }
 
 
@@ -164,3 +175,4 @@ ul{
 .CreateButton{
     padding-top:25px;
 }
+

@@ -11,20 +11,161 @@
             <input class="form-control form-control-lg custom-input" type="text" asp-for="studentFK" placeholder="2021XXXXXX">
         </div>
 
-        <label class = "questions"> 1. The teacher effectively communicated complex concepts and ideas to students. </label>
-        <partial name = "_Evaluate" />
+        <div class = "QuestionsContainer">
+            <label class = "questions"> 1. The teacher effectively communicated complex concepts and ideas to students. </label>
 
-        <label class = "questions"> 2. The teacher created a supportive and inclusive classroom environment for all students. </label>
-        <partial name = "_Evaluate" />
+            <div class="EvaluateContainer">
 
-        <label class = "questions"> 3. The teacher adapted their teaching methods to meet the diverse learning needs of their students.</label>
-        <partial name = "_Evaluate" />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answerOne" alue="StronglyAgree">
+                    <label class="form-check-label" asp-for="answerOne">Strongly Agree</label>
+                </div>
 
-        <label class = "questions"> 4. The teacher was responsive to student questions, concerns, and feedback. </label>
-        <partial name = "_Evaluate" />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answerOne" value="Agree">
+                    <label class="form-check-label" asp-for="answerOne">Agree</label>
+                </div>
 
-        <label class = "questions"> 5. The teacher was organized and prepared in delivering their lessons and managing classroom activities. </label>
-        <partial name = "_Evaluate" />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answerOne" value="Neutral">
+                    <label class="form-check-label" asp-for="answerOne">Neutral</label>
+                </div>
 
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answerOne"  value="Disagree">
+                    <label class="form-check-label" asp-for="answerOne">Disagree</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="answerOne" value="StronglyDisagree">
+                    <label class="form-check-label" asp-for="answerOne">Strongly Disagree</label>
+                </div>
+             </div>
+
+            <label class = "questions">2. The teacher created a supportive and inclusive classroom environment for all students. </label>
+
+                <div class="EvaluateContainer">
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerTwo" value="StronglyAgree">
+                        <label class="form-check-label" asp-for="answerTwo">Strongly Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerTwo" value="Agree">
+                        <label class="form-check-label" asp-for="answerTwo">Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerTwo" value="Neutral">
+                        <label class="form-check-label" asp-for="answerTwo">Neutral</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerTwo"  value="Disagree">
+                        <label class="form-check-label" asp-for="answerTwo">Disagree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerTwo" value="StronglyDisagree">
+                        <label class="form-check-label" asp-for="answerTwo">Strongly Disagree</label>
+                    </div>
+                 </div>            
+
+            <label class = "questions"> 3. The teacher adapted their teaching methods to meet the diverse learning needs of their students.</label>
+
+                <div class="EvaluateContainer">
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerThree" value="StronglyAgree">
+                        <label class="form-check-label" asp-for="answerThree">Strongly Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerThree" value="Agree">
+                        <label class="form-check-label" asp-for="answerThree">Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerThree" value="Neutral">
+                        <label class="form-check-label" asp-for="answerThree">Neutral</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerThree"  value="Disagree">
+                        <label class="form-check-label" asp-for="answerThree">Disagree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerThree" value="StronglyDisagree">
+                        <label class="form-check-label" asp-for="answerThree">Strongly Disagree</label>
+                    </div>
+                 </div>       
+
+            <label class = "questions"> 4. The teacher was responsive to student questions, concerns, and feedback. </label>
+
+                <div class="EvaluateContainer">
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFour" value="StronglyAgree">
+                        <label class="form-check-label" asp-for="answerFour">Strongly Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFour" value="Agree">
+                        <label class="form-check-label" asp-for="answerFour">Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFour" value="Neutral">
+                        <label class="form-check-label" asp-for="answerFour">Neutral</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFour"  value="Disagree">
+                        <label class="form-check-label" asp-for="answerFour">Disagree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFour" value="StronglyDisagree">
+                        <label class="form-check-label" asp-for="answerFour">Strongly Disagree</label>
+                    </div>
+                 </div>      
+
+            <label class = "questions"> 5. The teacher was organized and prepared in delivering their lessons and managing classroom activities. </label>
+
+                <div class="EvaluateContainer">
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFive" value="StronglyAgree">
+                        <label class="form-check-label" asp-for="answerFive">Strongly Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFive" value="Agree">
+                        <label class="form-check-label" asp-for="answerFive">Agree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFive" value="Neutral">
+                        <label class="form-check-label" asp-for="answerFive">Neutral</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFive"  value="Disagree">
+                        <label class="form-check-label" asp-for="answerFive">Disagree</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="answerFive" value="StronglyDisagree">
+                        <label class="form-check-label" asp-for="answerFive">Strongly Disagree</label>
+                    </div>
+                 </div>   
+        </div>
+
+         <div class="EndButton">
+             <button type = "submit" class = " btn btn-primary endButton"> Submit </button>
+         </div>
+             <a asp-controller="Home" asp-action="Index" class ="btn btn-primary"> Back </a>
 </form>
 

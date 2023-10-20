@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EvaluationSystem.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231015033105_AddTables")]
+    [Migration("20231020040410_AddTables")]
     partial class AddTables
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,28 +52,28 @@ namespace EvaluationSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("answerId"), 1L, 1);
 
-                    b.Property<string>("agree")
+                    b.Property<string>("answerFive")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("disagree")
+                    b.Property<string>("answerFour")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("neutral")
+                    b.Property<string>("answerOne")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("answerThree")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("answerTwo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("professorFK")
                         .HasColumnType("int");
-
-                    b.Property<string>("stronglyAgree")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("stronglyDisagree")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("studentFK")
                         .HasColumnType("int");

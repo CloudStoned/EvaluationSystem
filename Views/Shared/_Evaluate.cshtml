@@ -1,28 +1,9 @@
 ﻿@model StudentAnswersTable
 
-<div class="EvaluateContainer">
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="question1" id="inlineRadio1a" value="StronglyAgree">
-        <label class="form-check-label" for="inlineRadio1a" asp-for="answerOne">Strongly Agree</label>
-    </div>
+<div class="EvaluateContainer" >
+	@EvaluateButtons.RadioButtonsForQuestionOne();
+</div>
 
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="question1" id="inlineRadio1b" value="Agree">
-        <label class="form-check-label" for="inlineRadio1b">Agree</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="question1" id="inlineRadio1c" value="Neutral">
-        <label class="form-check-label" for="inlineRadio1c">Neutral</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="question1" id="inlineRadio1d" value="Disagree">
-        <label class="form-check-label" for="inlineRadio1d">Disagree</label>
-    </div>
-
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="question1" id="inlineRadio1e" value="StronglyDisagree">
-        <label class="form-check-label" for="inlineRadio1e">Strongly Disagree</label>
-    </div>
+<div class="EvaluateContainer" >
+	@Html.Raw(EvaluationDLL.EvaluateButtons.RadioButtonsForQuestionTwo());
 </div>

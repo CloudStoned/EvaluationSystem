@@ -44,11 +44,11 @@ namespace EvaluationSystem.Migrations
                 {
                     answerId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    stronglyAgree = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    agree = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    neutral = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    disagree = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    stronglyDisagree = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    answerOne = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    answerTwo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    answerThree = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    answerFour = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    answerFive = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     studentFK = table.Column<int>(type: "int", nullable: false),
                     professorFK = table.Column<int>(type: "int", nullable: false)
                 },
